@@ -9,6 +9,16 @@ import UIKit
 
 class TrivaViewController: UIViewController {
 
+    @IBOutlet weak var questionsLabel: UILabel!
+    
+    @IBOutlet weak var chocie1Button: UIButton!
+    
+    @IBOutlet weak var choice2Button: UIButton!
+    
+    @IBOutlet weak var choice3Button: UIButton!
+    
+    @IBOutlet weak var choice4Button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

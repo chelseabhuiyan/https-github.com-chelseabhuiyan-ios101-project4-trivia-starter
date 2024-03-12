@@ -4,27 +4,30 @@ Submitted by: **Chelsea Bhuiyan**
 
 **Trivia App** is an app that ... [TODO] 
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] User can view the current question and 4 different answers
-- [ ] User can view the next question after tapping an answer
-- [ ] User can answer at least 3 different questions
+- [x] User can view the current question and 4 different answers
+- [x] User can view the next question after tapping an answer
+- [x] User can answer at least 3 different questions
 
 
 The following **optional** features are implemented:
 
-- [ ] User can use the vertical orientation of the app on any device
-- [ ] User can track the question they are on and how many questions are left
-- [ ] User can see how many questions they got correct after answering all questions
-- [ ] User should be able to restart the game after they've finished answering all questions
+- [x] User can use the vertical orientation of the app on any device
+- [x] User can track the question they are on and how many questions are left
+- [x] User can see how many questions they got correct after answering all questions
+- [x] User should be able to restart the game after they've finished answering all questions
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Changed Background of the App
+- [x] Included AppLogo Picture
+- [x] Changed the text color Buttons
+- [x] Increased size of the Questions Text
 
 ## Video Walkthrough
 
@@ -34,7 +37,7 @@ Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove th
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The instructions were clear.
 
 ## License
 

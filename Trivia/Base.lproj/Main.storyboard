@@ -35,21 +35,33 @@
                                         <rect key="frame" x="0.0" y="342" width="300" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Choice1"/>
+                                        <connections>
+                                            <action selector="choice1Tapped:" destination="lp0-cS-PgU" eventType="touchUpInside" id="jQo-2i-r0s"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAt-iS-Rgx">
                                         <rect key="frame" x="0.0" y="418.33333333333331" width="300" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Choice2"/>
+                                        <connections>
+                                            <action selector="choice2Tapped:" destination="lp0-cS-PgU" eventType="touchUpInside" id="jZy-px-9tQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaL-8Y-Mhx">
                                         <rect key="frame" x="0.0" y="494.66666666666669" width="300" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Choice3"/>
+                                        <connections>
+                                            <action selector="choice3Tapped:" destination="lp0-cS-PgU" eventType="touchUpInside" id="grB-Kv-OVm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-H2-pNK">
                                         <rect key="frame" x="0.0" y="571" width="300" height="34.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Choice4"/>
+                                        <connections>
+                                            <action selector="choice4Tapped:" destination="lp0-cS-PgU" eventType="touchUpInside" id="dke-gP-kWQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -62,8 +74,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="chocie1Button" destination="g7e-WM-Iti" id="d4N-YH-TYl"/>
-                        <outlet property="choice2Button" destination="YAt-iS-Rgx" id="VLl-d8-kRs"/>
+                        <outlet property="choice1Button" destination="g7e-WM-Iti" id="zzx-hK-lwa"/>
+                        <outlet property="choice2Button" destination="YAt-iS-Rgx" id="SB5-A1-Doz"/>
                         <outlet property="choice3Button" destination="OaL-8Y-Mhx" id="d4c-ne-rTp"/>
                         <outlet property="choice4Button" destination="QOE-H2-pNK" id="CEc-x8-Kp9"/>
                         <outlet property="questionsLabel" destination="xui-YB-y3A" id="gCe-bO-Wd1"/>

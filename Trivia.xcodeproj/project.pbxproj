@@ -53,6 +53,7 @@
 		E586E3FB2B9E5D1300839121 /* TrivaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivaViewController.swift; sourceTree = "<group>"; };
 		E5CF97842B9F96E5003407F1 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		E5CF97862BA00B02003407F1 /* taylortriva.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = taylortriva.jpeg; path = ../../taylortriva.jpeg; sourceTree = "<group>"; };
+		E5CF97882BA0101B003407F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		9926AB4329DFAE1500860532 /* TriviaUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E5CF97882BA0101B003407F1 /* Info.plist */,
 				9926AB4429DFAE1500860532 /* TriviaUITests.swift */,
 				9926AB4629DFAE1500860532 /* TriviaUITestsLaunchTests.swift */,
 			);
@@ -537,6 +539,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CodePath.TriviaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -554,6 +558,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CodePath.TriviaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

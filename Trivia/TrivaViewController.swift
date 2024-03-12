@@ -29,7 +29,7 @@ class TrivaViewController: UIViewController {
         Question(questionText: "What is Taylor Swift's favorite number?", choices: ["9", "7", "22", "13"], correctAnswerIndex: 3),
         Question(questionText: "What does 'TV' stand for in reference to Taylor Swift's music?", choices: ["Television", "Track & Video", "Taylor's Version", "Tour Version"], correctAnswerIndex: 3),
         Question(questionText: "What is Taylor Swift's longest song?", choices: ["All too Well", "Enchanted", "Midnight Rain", "White Horse"], correctAnswerIndex: 1),
-        Question(questionText: "Which song are these lyrics from, 'Romeo, take me somewhere we can be alone, I'll be waiting, all there's left to do is run, You'll be the prince and I'll be the princess'?", choices: ["August", "Love Story", "Ours", "The Story Of Us"], correctAnswerIndex: 2)
+        Question(questionText: "Which song is these lyrics from 'I'd tell you I miss you but I don't know how'", choices: ["August", "Love Story", "Ours", "The Story Of Us"], correctAnswerIndex: 2)
     ]
     
     var currentQuestionIndex = 0
@@ -37,17 +37,34 @@ class TrivaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         displayQuestion()
+        
+        let backgroundImage = UIImageView(image: UIImage(named: "taylortriva.jpeg"))
+                backgroundImage.contentMode = .scaleAspectFill
+                view.addSubview(backgroundImage)
+                view.sendSubviewToBack(backgroundImage)
+
+               
+        
     }
     
     func displayQuestion() {
         let currentQuestion = questions[currentQuestionIndex]
         questionsLabel.text = currentQuestion.questionText
+        questionsLabel.font = UIFont.boldSystemFont(ofSize: 40)
+        questionNumLabel.font = UIFont.boldSystemFont(ofSize: 30)
         choice1Button.setTitle(currentQuestion.choices[0], for: .normal)
+        choice1Button.setTitleColor(.black, for: .normal)
         choice2Button.setTitle(currentQuestion.choices[1], for: .normal)
+        choice2Button.setTitleColor(.black, for: .normal)
         choice3Button.setTitle(currentQuestion.choices[2], for: .normal)
+        choice3Button.setTitleColor(.black, for: .normal)
         choice4Button.setTitle(currentQuestion.choices[3], for: .normal)
+        choice4Button.setTitleColor(.black, for: .normal)
         questionNumLabel.text="Question \(currentQuestionIndex + 1)/\(questions.count)"
         restartButton.isHidden = false
+        restartButton.setTitle("Restart", for: .normal)
+            restartButton.setTitleColor(.black, for: .normal)
+        
         
     }
    

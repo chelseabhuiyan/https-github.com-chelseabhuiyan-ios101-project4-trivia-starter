@@ -17,6 +17,7 @@
 		9926AB4729DFAE1500860532 /* TriviaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9926AB4629DFAE1500860532 /* TriviaUITestsLaunchTests.swift */; };
 		E586E3FC2B9E5D1300839121 /* TrivaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586E3FB2B9E5D1300839121 /* TrivaViewController.swift */; };
 		E5CF97852B9F96E5003407F1 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF97842B9F96E5003407F1 /* Questions.swift */; };
+		E5CF97872BA00B02003407F1 /* taylortriva.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5CF97862BA00B02003407F1 /* taylortriva.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9926AB4629DFAE1500860532 /* TriviaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E586E3FB2B9E5D1300839121 /* TrivaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivaViewController.swift; sourceTree = "<group>"; };
 		E5CF97842B9F96E5003407F1 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		E5CF97862BA00B02003407F1 /* taylortriva.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = taylortriva.jpeg; path = ../../taylortriva.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9926AB2929DFAE1400860532 /* Main.storyboard */,
 				E5CF97842B9F96E5003407F1 /* Questions.swift */,
 				E586E3FB2B9E5D1300839121 /* TrivaViewController.swift */,
+				E5CF97862BA00B02003407F1 /* taylortriva.jpeg */,
 				9926AB2C29DFAE1400860532 /* Assets.xcassets */,
 				9926AB2E29DFAE1400860532 /* LaunchScreen.storyboard */,
 				9926AB3129DFAE1400860532 /* Info.plist */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9926AB3029DFAE1400860532 /* LaunchScreen.storyboard in Resources */,
+				E5CF97872BA00B02003407F1 /* taylortriva.jpeg in Resources */,
 				9926AB2D29DFAE1400860532 /* Assets.xcassets in Resources */,
 				9926AB2B29DFAE1400860532 /* Main.storyboard in Resources */,
 			);

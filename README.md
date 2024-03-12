@@ -28,6 +28,7 @@ The following **additional** features are implemented:
 - [x] Included AppLogo Picture
 - [x] Changed the text color Buttons
 - [x] Increased size of the Questions Text
+- [x] Restart Button Added
 
 ## Video Walkthrough
 

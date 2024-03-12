@@ -19,12 +19,17 @@ class TrivaViewController: UIViewController {
     
     @IBOutlet weak var choice4Button: UIButton!
     
+    @IBOutlet weak var questionNumLabel: UILabel!
+    
+    @IBOutlet weak var restartButton: UIButton!
+    
+    
     var questions: [Question] = [
-        Question(questionText: "What is the capital of France?", choices: ["Berlin", "Madrid", "Paris", "Rome"], correctAnswerIndex: 2),
-        Question(questionText: "Which planet is known as the Red Planet?", choices: ["Mars", "Venus", "Jupiter", "Saturn"], correctAnswerIndex: 0),
-        Question(questionText: "What is the largest mammal in the world?", choices: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"], correctAnswerIndex: 1),
-        Question(questionText: "Who wrote 'Romeo and Juliet'?", choices: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"], correctAnswerIndex: 1),
-        Question(questionText: "What is the currency of Japan?", choices: ["Dollar", "Euro", "Yen", "Pound"], correctAnswerIndex: 2)
+        Question(questionText: "Which album features Taylor Swift's song Mine?", choices: ["Speak Now", "Fearless", "Red", "1989"], correctAnswerIndex: 1),
+        Question(questionText: "What is Taylor Swift's favorite number?", choices: ["9", "7", "22", "13"], correctAnswerIndex: 3),
+        Question(questionText: "What does 'TV' stand for in reference to Taylor Swift's music?", choices: ["Television", "Track & Video", "Taylor's Version", "Tour Version"], correctAnswerIndex: 3),
+        Question(questionText: "What is Taylor Swift's longest song?", choices: ["All too Well", "Enchanted", "Midnight Rain", "White Horse"], correctAnswerIndex: 1),
+        Question(questionText: "Which song are these lyrics from, 'Romeo, take me somewhere we can be alone, I'll be waiting, all there's left to do is run, You'll be the prince and I'll be the princess'?", choices: ["August", "Love Story", "Ours", "The Story Of Us"], correctAnswerIndex: 2)
     ]
     
     var currentQuestionIndex = 0
@@ -41,8 +46,10 @@ class TrivaViewController: UIViewController {
         choice2Button.setTitle(currentQuestion.choices[1], for: .normal)
         choice3Button.setTitle(currentQuestion.choices[2], for: .normal)
         choice4Button.setTitle(currentQuestion.choices[3], for: .normal)
+        questionNumLabel.text="Question \(currentQuestionIndex + 1)/\(questions.count)"
+        restartButton.isHidden = false
+        
     }
-    
    
     @IBAction func choice1Tapped(_ sender: UIButton) {
         handleAnswerTapped(choiceIndex: 0)
@@ -64,6 +71,10 @@ class TrivaViewController: UIViewController {
     }
     
     
+    @IBAction func restartButton(_ sender: UIButton) {
+        restartGame()
+    }
+    
     func handleAnswerTapped(choiceIndex: Int) {
         let currentQuestion = questions[currentQuestionIndex]
         
@@ -83,7 +94,24 @@ class TrivaViewController: UIViewController {
             displayQuestion()
         } else {
             print("Game Over")
-            // You might want to reset the game or navigate to a summary screen
+            displaySummary()
+            restartGame()
+            
         }
     }
-}
+    func restartGame() {
+            currentQuestionIndex = 0
+            questionsLabel.text = "Game Restarted"
+            restartButton.isHidden = false
+            displayQuestion()
+        }
+        
+    func displaySummary() {
+            let alertController = UIAlertController(title: "Game Over", message: "You answered \(currentQuestionIndex) questions correctly!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                self.restartGame()
+            }
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
+        }
+    }

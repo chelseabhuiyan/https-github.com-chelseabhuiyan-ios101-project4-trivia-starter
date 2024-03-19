@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-
+https://www.loom.com/share/65e5ba4f190543bd86c1b20a85646d0a?sid=11f00639-ce80-4c46-9f64-03ff73bd847d
 ## Notes
 
 Describe any challenges encountered while building the app.

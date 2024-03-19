@@ -1,45 +1,42 @@
-# Project 3 - *Trivia App*
+roject 4 - *Trivia App*
 
 Submitted by: **Chelsea Bhuiyan**
 
-**Trivia App** is a simple trivia app that displays a question and 4 choices. This app has five questions and at the end the score is calculated and the trivia is restarted. It also includes a restart button at the bottom right hand corner which allows you to restart from the begining any point in the game. You must answer all 5 questions to view your score.
+**Name of your app** is an app that ... [TODO] 
 
-Time spent: **7** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] User can view the current question and 4 different answers
-- [x] User can view the next question after tapping an answer
-- [x] User can answer at least 3 different questions
+- [x] User can view and answer at least 5 trivia questions.
+- [ ] App retrieves question data from the Open Trivia Database API.
+- [x] Fetch a different set of questions if the user indicates they would like to reset the game.
+- [x] Users can see score after submitting all questions.
+- [x] True or False questions only have two options.
 
 
 The following **optional** features are implemented:
 
-- [x] User can use the vertical orientation of the app on any device
-- [x] User can track the question they are on and how many questions are left
-- [x] User can see how many questions they got correct after answering all questions
-- [x] User should be able to restart the game after they've finished answering all questions
+  
+- [ ] Allow the user to choose a specific category of questions.
+- [ ] Provide the user feedback on whether each question was correct before navigating to the next.
 
 The following **additional** features are implemented:
 
-- [x] Changed Background of the App
-- [x] Included AppLogo Picture
-- [x] Changed the text color Buttons
-- [x] Increased size of the Questions Text
-- [x] Restart Button Added
+- [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
-https://www.loom.com/share/65e5ba4f190543bd86c1b20a85646d0a?sid=11f00639-ce80-4c46-9f64-03ff73bd847d
+
 
 ## Notes
 
-The instructions were clear.
+Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [2024] [Chelsea Bhuiyan]
+    Copyright [yyyy] [name of copyright owner]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
